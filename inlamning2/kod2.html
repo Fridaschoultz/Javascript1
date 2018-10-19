@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let bredd = prompt ("Vad är bredden?"); /* 1. här skapas variabeln bredd som
+                                               innehåller metoden prompt som returnerar
+                                               texten "vad är bredden?" i en inmatningsruta.
+                                               När man matat in ett värde så lagras det i bredd*/
+
+
+      let hojd = prompt ("Vad är höjden?"); /* 2. här skapas variabeln hojd som innehåller 
+                                            metoden prompt som returnerar texten "vad är höjden?"
+                                            i en inmatningsruta. När man matat in ett värde 
+                                            så lagras det i hojd*/
+
+      function area (b, h) {
+          let a = b * h;
+          return a;      /* Skapar en funktion (4) area som innehåller två parametrar (b, h)
+                          och i funktionen skapar vi en variabel a (5) som innehåller multiplikationen
+                          mellan parametrarna b och h så vi får b*h och som sparas i variabeln a.
+                           Sen returnerars (6) a till anropet av denna funktion.*/
+      } 
+        let x = area(bredd, hojd); /* 3. Anropet av funktionen area. Här skickar vi variablerna 
+                bredd och hojd till funktionen area. (7) Sedan när funktionen area returnerar tillbaka
+                 till anropet så lagras värdet av returneringen i variabeln x. */
+        
+        function omkrets (b,h) {
+           let o = 2*b+2*h;
+           return o;    /* skapar en funktion omkrets med två parametrar(b och h)
+                        skapar en variabel o i funktionen som innehåller formeln
+                        för omkretsen som sparas i variabeln o. Metoden return returnerar
+                        variabeln o till anropet let =y omkrets(bredd, hojd)*/
+        }
+        let y = omkrets(bredd, hojd); /*Anropet av funktionen omkrets. 
+                                      Här skickar vi variablerna bredd och hojd 
+                                      till funktionen omkrets. Funktionen omkrets returnerar
+                                      tillbaka till anropet och så lagras värdet av 
+                                      returneringen i varibeln y.*/
+        
+        alert("Area: " + x + "\nOmkrets: " + y); /* Här matar vi ut ett textmeddelande
+                                                  som innehåller texten "omkrets" och
+                                                 "area" inklusive respektive variabel 
+                                                  som innehåller resultatet för 
+                                                  omkrets (y) och arean (x). */
+        </script>
+</body>
+</html>

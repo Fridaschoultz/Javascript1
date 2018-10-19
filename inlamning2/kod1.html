@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tal1= prompt("Skriv ett tal"); /*vi skapar en variabel tal1 med metoden prompt 
+                                            som skriver ut texten "Skriv ett tal" och där
+                                            man mata in ett godtyckligt tal som lagras i tal1 */ 
+
+        let tal2= prompt("Skriv ett tal till"); /*vi skapar en variabel tal2 med metoden prompt 
+                                            som skriver ut texten "Skriv ett tal till" och där
+                                            man matar in ett godtyckligt tal som lagras i tal2 */ 
+
+        let pro = tal1 * tal2; /* skapar en variabel pro som innehåller räkneoperationen 
+                                  multiplikation (*) mellan variablerna tal1 och tal2
+                                  och lagrar resultatet i pro */
+
+        let div = tal1/tal2; /* skapar en variabel div som innehåller räkneoperationen 
+                                  delat (/) mellan variablerna tal1 och tal2
+                                  och lagrar resultatet i div */
+
+        alert("Produkt: " + pro + "\nKvot: " + div); /* Här visas resultatet av variabeln
+                                                    pro och div i en textruta i webbläsaren. */
+                              
+                             // När man matar in text i prompten så får man meddelandet NaN(not a number).
+
+                             // När man inte matar in någotning i prompten så får man meddelandet 0. 
+
+                            /* Om jag matar in nollor i prompten så ger multiplikationen svaret 0
+                            och om jag matar in noll i divisionen så får jag Nan (not a number).*/
+                            
+                            /* Om tal1 är större än noll och tal2 är noll så bli produkten noll
+                            och kvoten blir infinity.*/
+        </script>
+    
+</body>
+</html>
