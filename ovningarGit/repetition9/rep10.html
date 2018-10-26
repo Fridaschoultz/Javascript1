@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avståndsformel</title>
+</head>
+<body> 
+    <script>
+        /*Avståndsformeln kan användas för att beräkna
+avståndet mellan två punkter i ett koordinatsystem.
+
+d = sqrt( (x2-x1)^2 + (y2 -y1)^2 )
+
+Skriv ett program som läser in två punkter och beräknar
+avståndet mellan punkterna
+*/
+
+let x1,x2,y1,y2;
+x1 = prompt("Ange x1");
+y1 = prompt("Ange y1");
+x2 = prompt("Ange x2");
+y2 = prompt("Ange y2");
+d = Math.sqrt( Math.pow((x2-x1), 2)+ Math.pow((y2 -y1), 2) );
+alert (d.toFixed(4));
+
+// samma uppgift men med en enda prompt alltså med (x1,x2,y1,y2)  (Finns en nya operator som tar upphöjt till, ** = upphöjt till)
+let str = prompt ("Ange x1,x2,y1,y2");
+let arr = str.split(" , ");
+if (arr.lenght === 4){                          // Viktigt att veta hur man omvandlar en sträng till en array
+    distance(arr[0],arr[1],arr[2],arr[3]);
+    alert (d.toFixed(4));
+}
+else {
+    alert("Felaktig inmatning!");
+}
+let x1,x2,y1,y2;
+d = Math.sqrt( Math.pow((x2-x1), 2)+ Math.pow((y2 -y1), 2) );
+alert (d.toFixed(4));
+
+
+
+// skapa en funktion av uppgiften
+alert (distance(x1,x2,y1,y2).toFixed(4));
+
+function distance (x1,x2,y1,y2){
+return Math.sqrt( Math.pow((x2-x1), 2)+ Math.pow((y2 -y1), 2) );
+}
+
+
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+</head>
+<body> <h1 id = "Clock"></h1>
+    <script>
+        let clock = document.getElementById("Clock");
+
+       function time (){
+        let datum = new Date ();
+        let klockan = datum.toTimeString().substring(0,8);
+      clock.innerHTML = klockan;
+       } 
+
+       setInterval(time, 1000);
+        
+        
+        
+        </script>
+</body>
+</html>

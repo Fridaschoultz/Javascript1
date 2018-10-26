@@ -22,5 +22,5 @@ console.log(today.getSeconds());
 console.log(today.toDateString());
 
 
-console.log(today.toTimeString());
+console.log(today.toTimeString());  
 console.log(today);
